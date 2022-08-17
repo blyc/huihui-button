@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "绘唱歌",
+    "translate": {
+      "zh-CN": "绘唱歌~",
+      "en-US": "Sing~"
+    }
+  },
+  {
+    "name": "绘卡爱",
+    "translate": {
+      "zh-CN": "绘卡爱~",
+      "en-US": "Cute~"
+    }
+  }
+]
