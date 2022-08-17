@@ -1,6 +1,6 @@
 import { CategoryItem, VoicesItem } from './type'
 
-const jsonList = require.context('@/../setting/translate', false, /.json$/).keys().map(item => {
+const jsonList = require.context('@/../setting/translate', true, /.json$/).keys().map(item => {
   return item.substring(2)
 })
 
