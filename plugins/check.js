@@ -1,20 +1,7 @@
 const fs = require('fs-extra')
 const path = require('path')
 const chalk = require('chalk')
-
-// DeepFile
-function deepGetDirectories(distPath) {
-  let FileList = []
-  return fs.readdirSync(distPath).filter(function (file) {
-    {
-      let isDir = fs.statSync(distPath + '/' + file).isDirectory();
-      if (!isDir) FileList = [...FileList, file]
-      return isDir;
-    }
-  }).reduce(function (all, subDir) {
-    return [...all, ...fs.readdirSync(distPath + '/' + subDir).map(e => subDir + '/' + e)]
-  }, FileList);
-}
+const myStatic = require('./myStatic')
 
 /**
  * 分类是否存在
@@ -39,7 +26,7 @@ module.exports = class Check {
 
         let CategoryList
         let VoicesList = []
-        deepGetDirectories(path.join(__dirname, '../setting/translate')).forEach(dir => {
+        myStatic.deepGetDirectories(path.join(__dirname, '../setting/translate')).forEach(dir => {
           if (dir.endsWith('.json') && dir !== 'locales.json') {
             if (dir === 'category.json') {
               CategoryList = fs.readJSONSync(path.join(__dirname, '../setting/translate/category.json'))

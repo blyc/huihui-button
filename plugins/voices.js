@@ -1,6 +1,6 @@
 const fs = require('fs-extra')
 const path = require('path')
-const chalk = require('chalk')
+const myStatic = require('./myStatic')
 
 /**
  * 在构建目录创建语音文件列表
@@ -12,7 +12,7 @@ module.exports = class Voices {
       try {
         const dir = path.join(__dirname, '../setting/translate')
         let VoicesList = []
-        const jsonList = fs.readdirSync(dir).filter(name => name !== 'locales.json' && name !== 'category.json')
+        const jsonList = myStatic.deepGetDirectories(dir).filter(name => name !== 'locales.json' && name !== 'category.json')
 
         jsonList.forEach(name => {
           const voice = fs.readJsonSync(path.join(dir, name))
