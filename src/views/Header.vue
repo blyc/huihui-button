@@ -7,10 +7,11 @@
         class="title"
         :class="{ pointer: !playSetting.showHide && isShowPointer }"
         @click="changeHide"
-      >{{ t(INFO_I18N.title) }}</div>
+      >{{ t(INFO_I18N.title) }}
+      </div>
 
       <template v-for="(btn, index) in btnList" :key="index">
-        <IBtn v-if="btn.url" :url="btn.url" :img="btn.img" />
+        <IBtn v-if="btn.url" :url="btn.url" :img="btn.img"/>
       </template>
 
       <div class="search-btn" @click="showSearch" v-if="!isWideScreen">
@@ -31,7 +32,7 @@
 
       <transition name="search">
         <div v-if="isWideScreen" style="overflow: hidden">
-          <Search />
+          <Search/>
         </div>
       </transition>
       <div class="btn" :title="t(INFO_I18N.lang)" @click="changeLang" v-if="i18n">
@@ -56,8 +57,9 @@
 <script lang="ts" setup>
 import Setting from '@/../setting/setting.json'
 import bilibiliPng from '@/assets/image/bilibili-fill.png'
-import twitterPng from '@/assets/image/twitter-fill.png'
+import weiboPng from '@/assets/image/weibo-fill.png'
 import youtubePng from '@/assets/image/youtube-fill.png'
+import twitterPng from '@/assets/image/twitter-fill.png'
 import { INFO_I18N } from '@/assets/script/type'
 import IBtn from '@/components/common/IconBtn.vue'
 import Search from '@/components/Search/Search.vue'
@@ -68,9 +70,10 @@ import { useI18n } from 'vue-i18n'
 
 const HEADER: {
   icon?: string;
+  bilibili?: string;
+  weibo?: string;
   youtube?: string;
   twitter?: string;
-  bilibili?: string;
 } = Setting['header'] || {}
 
 const onLogoClick = (logo: Ref<HTMLElement>) => {
@@ -90,16 +93,20 @@ const onLogoClick = (logo: Ref<HTMLElement>) => {
 
 const btnList = [
   {
+    url: HEADER.bilibili,
+    img: bilibiliPng
+  },
+  {
+    url: HEADER.weibo,
+    img: weiboPng
+  },
+  {
     url: HEADER.youtube,
     img: youtubePng
   },
   {
     url: HEADER.twitter,
     img: twitterPng
-  },
-  {
-    url: HEADER.bilibili,
-    img: bilibiliPng
   }
 ]
 
@@ -123,7 +130,10 @@ const showSearch = () => {
   }
 }
 
-const { t, locale } = useI18n()
+const {
+  t,
+  locale
+} = useI18n()
 
 /**
  * 切换语言

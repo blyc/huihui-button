@@ -1,5 +1,5 @@
 <template>
-  <Collapse title="README">
+  <Collapse title="食用指南(点击查看)">
     <div class="text" v-if="README.length > 0" v-html="README"></div>
     <div class="readme-icon">
       <div class="line" v-if="!playSetting.nowPlay">

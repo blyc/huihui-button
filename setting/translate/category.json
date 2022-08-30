@@ -2,15 +2,19 @@
   {
     "name": "绘唱歌",
     "translate": {
-      "zh-CN": "绘唱歌~",
-      "en-US": "Sing~"
+      "zh-CN": "绘唱歌~"
     }
   },
   {
     "name": "绘卡爱",
     "translate": {
-      "zh-CN": "绘卡爱~",
-      "en-US": "Cute~"
+      "zh-CN": "绘卡爱~"
+    }
+  },
+  {
+    "name": "绘发病",
+    "translate": {
+      "zh-CN": "绘发病~"
     }
   }
 ]
