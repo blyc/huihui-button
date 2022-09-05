@@ -15,14 +15,12 @@ module.exports = class Check {
     compiler.hooks.done.tap('check', () => {
       try {
         const mp3List = myStatic.deepGetDirectories(path.join(__dirname, '../public/voices'))
-        // const mp3List = fs.readdirSync(path.join(__dirname, '../public/voices'))
-        //   .filter(name => !((fs.statSync(path.join(__dirname, `../public/voices/${name}`))).isDirectory()))
 
         let imgList = []
-        const imgPath = path.join(__dirname, '../public/img')
+        const imgPath = path.join(__dirname, '../public/img/voices')
         if (fs.existsSync(imgPath)) {
           imgList = fs.readdirSync(imgPath)
-            .filter(name => (name !== 'logo.png') && !((fs.statSync(path.join(__dirname, `../public/img/${name}`))).isDirectory()))
+            .filter(name => !((fs.statSync(path.join(__dirname, `../public/img/voices/${name}`))).isDirectory()))
         }
 
         let CategoryList

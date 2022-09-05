@@ -31,6 +31,12 @@
       "url": "http://121.4.160.168:713",
       "background": "#F5C1BB",
       "color": "#5F505F"
+    },
+    {
+      "name": "工具箱",
+      "url": "http://121.4.160.168:99",
+      "background": "#F5C1BB",
+      "color": "#5F505F"
     }
   ],
   "link": [],
