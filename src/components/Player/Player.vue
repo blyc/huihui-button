@@ -6,7 +6,7 @@
           <template #header>
             <div class="category">
               <template v-if="playSetting.showInfo">
-                <a :href="item['url']" target="_blank">
+                <a :href="item['url']" target="_blank" rel="noopener noreferrer">
                   {{
                     item['title'] === "unknown" ? t("unknown") : item['title']
                   }}

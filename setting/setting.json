@@ -24,19 +24,22 @@
       "name": "待办事项",
       "url": "https://www.processon.com/view/link/62fb09395653bb3108f42fbe",
       "background": "#F5C1BB",
-      "color": "#5F505F"
+      "color": "#5F505F",
+      "hidden": false
     },
     {
       "name": "文件上传",
-      "url": "http://121.4.160.168:713",
+      "url": "http://file.llyc2000.site/",
       "background": "#F5C1BB",
-      "color": "#5F505F"
+      "color": "#5F505F",
+      "hidden": true
     },
     {
       "name": "工具箱",
-      "url": "http://121.4.160.168:99",
+      "url": "http://tool.llyc2000.site/",
       "background": "#F5C1BB",
-      "color": "#5F505F"
+      "color": "#5F505F",
+      "hidden": false
     }
   ],
   "link": [],

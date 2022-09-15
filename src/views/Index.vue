@@ -12,9 +12,9 @@
       <Card>
         <div style="text-align: center">{{ playTimesText }}</div>
       </Card>
-      <Card v-if="RELATED.length > 0">
+      <Card v-if="relatedFilter.length > 0">
         <div class="content">
-          <template v-for="item in RELATED" :key="item.name">
+          <template v-for="item in relatedFilter" :key="item.name">
             <Btn
               class="btn"
               :name="item.name"
@@ -103,6 +103,10 @@ const total = computed(() => {
   } else {
     return `${msg}${t(INFO_I18N.voiceTotal)} ${t(INFO_I18N.lastDate) ? `(+${t(INFO_I18N.newVoice)} · ${t(INFO_I18N.lastDate)})` : ''}`
   }
+})
+
+const relatedFilter = computed(() => {
+  return RELATED.filter((item) => !item.hidden)
 })
 
 const playTimesText = computed(() => `${t(INFO_I18N.playTimes)}: ${playTimes.value}${playTimesNow.value > 0 ? `(+${playTimesNow.value})` : ''}`)

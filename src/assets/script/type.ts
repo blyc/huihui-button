@@ -244,4 +244,5 @@ export interface FriendlyLink {
   url: string;
   background?: string;
   color?: string;
+  hidden?: boolean;
 }
