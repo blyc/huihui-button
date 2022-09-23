@@ -7,7 +7,7 @@
       "fullName": ""
     },
     "EN": {
-      "title": "HuiHui Voives Button",
+      "title": "HuiHui Voices Button",
       "fullName": ""
     }
   },
@@ -26,20 +26,6 @@
       "background": "#F5C1BB",
       "color": "#5F505F",
       "hidden": true
-    },
-    {
-      "name": "文件上传",
-      "url": "http://file.llyc2000.site/",
-      "background": "#F5C1BB",
-      "color": "#5F505F",
-      "hidden": true
-    },
-    {
-      "name": "工具箱",
-      "url": "http://tool.llyc2000.site/",
-      "background": "#F5C1BB",
-      "color": "#5F505F",
-      "hidden": true
     }
   ],
   "link": [],
@@ -51,7 +37,7 @@
       }
     ],
     "info": [],
-    "githubUrl": ""
+    "githubUrl": "https://github.com/blyc/huihui-button"
   },
   "console": {
     "text": "\\绘绘/\\绘绘/\\绘绘/\\绘绘/",

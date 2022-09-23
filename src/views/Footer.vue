@@ -82,7 +82,6 @@ const lastUpdate = `https://img.shields.io/date/${(process.env.VUE_APP_LAST_UPDA
     text-align right
 
     .git
-      visibility hidden
       display flex
       align-items center
 
@@ -100,7 +99,6 @@ const lastUpdate = `https://img.shields.io/date/${(process.env.VUE_APP_LAST_UPDA
       text-align left
 
       .git
-        visibility hidden
         display flex
         align-items center
 

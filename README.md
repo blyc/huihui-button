@@ -138,19 +138,19 @@ $active-color = #93a3b3
 [
   {
     // 语音命名
-    "name": "baba",
+    "name": "voiceName",
     // 语音文件名
-    "path": "baba.mp3",
+    "path": "voiceName.mp3",
     // 是否隐藏
     "hide": true,
     "translate": {
       // 语音中文翻译
-      "zh-CN": "米娜我是你爸爸",
+      "zh-CN": "voiceName",
       // 语音英语翻译
-      "en-US": "I'm your Baba"
+      "en-US": "voiceName"
     },
     // 语音所属分类(对应category的name)
-    "category": "名言",
+    "category": "分类",
     // 以下属性为可选
     // hover时显示图片，请放到public/voices/img目录
     "usePicture": {
@@ -161,9 +161,9 @@ $active-color = #93a3b3
     "date": "2020-11-11",
     // 语音出处
     "mark": {
-      "title": "【Hiiro】读评论 学中文 DD们的评论都是什么东西啊？",
-      "time": "0:01~0:03",
-      "url": "https://www.bilibili.com/video/BV1ET4y177A8"
+      "title": "标题",
+      "time": "0:00:01~0:00:03",
+      "url": "https://www.bilibili.com/video/AV1"
     }
   }
 ]
