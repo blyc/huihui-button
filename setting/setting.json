@@ -25,7 +25,7 @@
       "url": "https://www.processon.com/view/link/62fb09395653bb3108f42fbe",
       "background": "#F5C1BB",
       "color": "#5F505F",
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "文件上传",
@@ -39,7 +39,7 @@
       "url": "http://tool.llyc2000.site/",
       "background": "#F5C1BB",
       "color": "#5F505F",
-      "hidden": false
+      "hidden": true
     }
   ],
   "link": [],
